@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="Befree" translate="label" sortOrder="10">
+            <label>FAQ</label>
+        </tab>
+        <section id="befree" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Befree</label>
+            <tab>Befree</tab>
+            <resource>Befree_Faq::faq_config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <field id="number_of_faq" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Number of questions</label>
+                    <comment>Number of questions to be displayed on main page</comment>
+                    <source_model>Befree\Faq\Model\Config\Source\ListMode</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

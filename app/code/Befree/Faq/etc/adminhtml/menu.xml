@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Befree_Faq::manager" title="CMS" module="Befree_Faq" sortOrder="81" resource="Befree_Faq::manager" />
+        <add id="Befree_Faq::add_row" title="FAQ" module="Befree_Faq" sortOrder="20" parent="Befree_Faq::manager" action="grid/grid" resource="Befree_Faq::add_row"/>
+    </menu>
+</config>
